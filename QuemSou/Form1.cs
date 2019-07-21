@@ -26,9 +26,10 @@ namespace QuemSou
             string nomeUser = System.Environment.UserName;
             System.Net.IPAddress[] ip = System.Net.Dns.GetHostAddresses(nomeComputador);
             
-            label.Text = nomeComputador;
-            label1.Text = nomeUser;
-            label2.Text = ip[1].ToString();
+            labelNomeComputador.Text = nomeComputador;
+            labelUserWindows.Text = nomeUser;
+            labelIPLocal.Text = ip[1].ToString();
+           
         }
 
     }

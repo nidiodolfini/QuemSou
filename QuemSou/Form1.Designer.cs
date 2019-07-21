@@ -29,50 +29,118 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label = new System.Windows.Forms.Label();
+            this.labelNomeComputador = new System.Windows.Forms.Label();
+            this.labelIPLocal = new System.Windows.Forms.Label();
+            this.labelUserWindows = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label
+            // labelNomeComputador
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(31, 26);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(35, 13);
-            this.label.TabIndex = 0;
-            this.label.Text = "label1";
+            this.labelNomeComputador.AutoSize = true;
+            this.labelNomeComputador.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNomeComputador.Location = new System.Drawing.Point(30, 77);
+            this.labelNomeComputador.Name = "labelNomeComputador";
+            this.labelNomeComputador.Size = new System.Drawing.Size(169, 23);
+            this.labelNomeComputador.TabIndex = 0;
+            this.labelNomeComputador.Text = "NomeComputador";
+            // 
+            // labelIPLocal
+            // 
+            this.labelIPLocal.AutoSize = true;
+            this.labelIPLocal.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIPLocal.Location = new System.Drawing.Point(30, 127);
+            this.labelIPLocal.Name = "labelIPLocal";
+            this.labelIPLocal.Size = new System.Drawing.Size(120, 23);
+            this.labelIPLocal.TabIndex = 1;
+            this.labelIPLocal.Text = "labelIPLocal";
+            // 
+            // labelUserWindows
+            // 
+            this.labelUserWindows.AutoSize = true;
+            this.labelUserWindows.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUserWindows.Location = new System.Drawing.Point(30, 28);
+            this.labelUserWindows.Name = "labelUserWindows";
+            this.labelUserWindows.Size = new System.Drawing.Size(158, 23);
+            this.labelUserWindows.TabIndex = 2;
+            this.labelUserWindows.Text = "UsuárioWindows";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(240, 138);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(152, 64);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(334, 186);
+            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(30, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "TI 3897-2011 e 2036";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(369, 99);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label2.Location = new System.Drawing.Point(30, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Usuário:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label3.Location = new System.Drawing.Point(30, 60);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Computador:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label4.Location = new System.Drawing.Point(30, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(29, 18);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "IP:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(554, 309);
+            this.ClientSize = new System.Drawing.Size(404, 220);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.labelUserWindows);
+            this.Controls.Add(this.labelIPLocal);
+            this.Controls.Add(this.labelNomeComputador);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuemSou?";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,9 +148,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label labelNomeComputador;
+        private System.Windows.Forms.Label labelIPLocal;
+        private System.Windows.Forms.Label labelUserWindows;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
