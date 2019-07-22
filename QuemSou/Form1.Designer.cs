@@ -73,9 +73,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(240, 138);
+            this.pictureBox1.Location = new System.Drawing.Point(215, 127);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(152, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 91);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -85,9 +85,9 @@
             this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(30, 177);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 23);
+            this.label1.Size = new System.Drawing.Size(126, 23);
             this.label1.TabIndex = 4;
-            this.label1.Text = "TI 3897-2011 e 2036";
+            this.label1.Text = "TI 3889-1430";
             // 
             // label2
             // 
