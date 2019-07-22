@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.RedeLocalTeste = new System.Windows.Forms.Label();
+            this.InternetTest = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +75,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(236, 142);
+            this.pictureBox1.Location = new System.Drawing.Point(231, 146);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 73);
             this.pictureBox1.TabIndex = 3;
@@ -82,12 +84,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 183);
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 23);
+            this.label1.Size = new System.Drawing.Size(157, 18);
             this.label1.TabIndex = 4;
-            this.label1.Text = "TI 3897-2036 e 2011";
+            this.label1.Text = "TI: 3897-2036 e 2011";
             // 
             // label2
             // 
@@ -119,11 +121,33 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "IP:";
             // 
+            // RedeLocalTeste
+            // 
+            this.RedeLocalTeste.AutoSize = true;
+            this.RedeLocalTeste.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.RedeLocalTeste.Location = new System.Drawing.Point(238, 45);
+            this.RedeLocalTeste.Name = "RedeLocalTeste";
+            this.RedeLocalTeste.Size = new System.Drawing.Size(139, 18);
+            this.RedeLocalTeste.TabIndex = 8;
+            this.RedeLocalTeste.Text = "RedeLocalTeste";
+            // 
+            // InternetTest
+            // 
+            this.InternetTest.AutoSize = true;
+            this.InternetTest.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.InternetTest.Location = new System.Drawing.Point(252, 86);
+            this.InternetTest.Name = "InternetTest";
+            this.InternetTest.Size = new System.Drawing.Size(107, 18);
+            this.InternetTest.TabIndex = 9;
+            this.InternetTest.Text = "InternetTest";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 220);
+            this.Controls.Add(this.InternetTest);
+            this.Controls.Add(this.RedeLocalTeste);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -156,6 +180,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label RedeLocalTeste;
+        private System.Windows.Forms.Label InternetTest;
     }
 }
 

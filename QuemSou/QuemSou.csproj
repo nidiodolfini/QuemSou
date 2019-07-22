@@ -34,7 +34,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>icone.ico</ApplicationIcon>
+    <ApplicationIcon>estrela1.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -85,6 +85,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="estrela1.ico" />
     <Content Include="favicon.ico" />
     <Content Include="icone.ico" />
   </ItemGroup>
