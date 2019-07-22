@@ -28,7 +28,15 @@ namespace QuemSou
             
             labelNomeComputador.Text = nomeComputador;
             labelUserWindows.Text = nomeUser;
-            labelIPLocal.Text = ip[1].ToString();
+            if(ip.Length > 2)
+            {
+                labelIPLocal.Text = ip[2].ToString();
+            }
+            else
+            {
+                labelIPLocal.Text = ip[1].ToString();
+            }
+            
            
         }
 
