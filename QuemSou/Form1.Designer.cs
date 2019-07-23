@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.RedeLocalTeste = new System.Windows.Forms.Label();
             this.InternetTest = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,9 +76,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(231, 146);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 163);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(156, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(109, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -85,11 +87,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(15, 189);
+            this.label1.Location = new System.Drawing.Point(16, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 18);
+            this.label1.Size = new System.Drawing.Size(116, 18);
             this.label1.TabIndex = 4;
-            this.label1.Text = "TI: 3897-2036 e 2011";
+            this.label1.Text = "TI: 2036 e 2011";
             // 
             // label2
             // 
@@ -125,7 +127,7 @@
             // 
             this.RedeLocalTeste.AutoSize = true;
             this.RedeLocalTeste.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.RedeLocalTeste.Location = new System.Drawing.Point(238, 45);
+            this.RedeLocalTeste.Location = new System.Drawing.Point(232, 31);
             this.RedeLocalTeste.Name = "RedeLocalTeste";
             this.RedeLocalTeste.Size = new System.Drawing.Size(139, 18);
             this.RedeLocalTeste.TabIndex = 8;
@@ -135,17 +137,29 @@
             // 
             this.InternetTest.AutoSize = true;
             this.InternetTest.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
-            this.InternetTest.Location = new System.Drawing.Point(252, 86);
+            this.InternetTest.Location = new System.Drawing.Point(232, 49);
             this.InternetTest.Name = "InternetTest";
             this.InternetTest.Size = new System.Drawing.Size(107, 18);
             this.InternetTest.TabIndex = 9;
             this.InternetTest.Text = "InternetTest";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(232, 10);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(65, 18);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Status:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 220);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.InternetTest);
             this.Controls.Add(this.RedeLocalTeste);
             this.Controls.Add(this.label4);
@@ -182,6 +196,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label RedeLocalTeste;
         private System.Windows.Forms.Label InternetTest;
+        private System.Windows.Forms.Label label5;
     }
 }
 

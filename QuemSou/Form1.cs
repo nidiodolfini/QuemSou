@@ -32,27 +32,40 @@ namespace QuemSou
                 labelIPLocal.Text = ip[1].ToString();
             }
 
-            var ping = new Ping();
-            var reply = ping.Send("172.31.1.1");
-            if (reply.Status == IPStatus.Success)
+            try
             {
-                RedeLocalTeste.Text = ("Rede Local Online");
-                RedeLocalTeste.ForeColor = Color.Green;
-            }
-            else
+
+            
+                var ping = new Ping();
+                var reply = ping.Send("172.31.1.1");
+                if (reply.Status == IPStatus.Success)
+                {
+                    RedeLocalTeste.Text = ("Rede Local Online");
+                    RedeLocalTeste.ForeColor = Color.Green;
+                }
+                else
+                {
+                    RedeLocalTeste.Text = ("Rede Local Offline");
+                    RedeLocalTeste.ForeColor = Color.Red;
+                }
+                var ping2 = new Ping();
+                var reply2 = ping2.Send("nidio.dev");
+                if (reply2.Status == IPStatus.Success)
+                {
+                    InternetTest.Text = ("Internet Online");
+                    InternetTest.ForeColor = Color.Green;
+                }
+                else
+                {
+                    InternetTest.Text = ("Internet Offline");
+                    InternetTest.ForeColor = Color.Red;
+                }
+                }
+            catch
             {
                 RedeLocalTeste.Text = ("Rede Local Offline");
                 RedeLocalTeste.ForeColor = Color.Red;
-            }
-            var ping2 = new Ping();
-            var reply2 = ping2.Send("nidio.dev");
-            if (reply2.Status == IPStatus.Success)
-            {
-                InternetTest.Text = ("Internet Online");
-                InternetTest.ForeColor = Color.Green;
-            }
-            else
-            {
+
                 InternetTest.Text = ("Internet Offline");
                 InternetTest.ForeColor = Color.Red;
             }
